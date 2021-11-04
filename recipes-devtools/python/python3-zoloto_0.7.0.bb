@@ -9,4 +9,6 @@ SRC_URI[sha256sum] = "d2f56ec10cc846c7431b54da067e389e457afc0f5ca17f1ebef127457f
 PYPI_PACKAGE = "zoloto"
 inherit pypi setuptools3
 
+RDEPENDS:${PN} = "opencv python3-pyquaternion python3-numpy python3-cached-property"
+
 BBCLASSEXTEND = "native nativesdk"
