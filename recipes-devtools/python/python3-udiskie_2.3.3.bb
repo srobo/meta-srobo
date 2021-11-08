@@ -10,6 +10,7 @@ PYPI_PACKAGE = "udiskie"
 inherit pypi setuptools3
 
 DEPENDS += "gettext-native"
+RDEPENDS:${PN} += "python3-setuptools python3-pygobject python3-pyyaml python3-docopt udisks2"
 
 BBCLASSEXTEND = "native nativesdk"
 

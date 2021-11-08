@@ -13,10 +13,12 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     packagegroup-core-full-cmdline \
     python3 \
     systemd-analyze \
+    python3-udiskie \
     python3-astoria \
     python3-sr-robot3 \
     srobo-kit \
     astoria-udiskie \
+    astoria-config \
     mosquitto \
     "
 
