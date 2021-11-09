@@ -8,6 +8,7 @@ SRC_URI = " \
     file://LICENSE \
     file://10-srobo.rules \
     file://astoria.toml \
+    file://exynos-blacklist.conf \
     "
 
 DEPENDS =  "astoria-config"
@@ -21,4 +22,6 @@ do_install () {
     chown -R astoria:astoria ${D}/var/srobo/cache/
     install -m 0644 ${WORKDIR}/10-srobo.rules ${D}/usr/lib/udev/rules.d/
     install -m 0644 ${WORKDIR}/astoria.toml ${D}/etc/
+    install -d ${D}/etc/modprobe.d/
+    install -m 0644 ${WORKDIR}/exynos-blacklist.conf ${D}/etc/modprobe.d/
 }
