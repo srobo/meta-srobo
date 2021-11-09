@@ -20,5 +20,6 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     astoria-udiskie \
     astoria-config \
     mosquitto \
+    servohack \
     "
 

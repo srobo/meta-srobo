@@ -11,7 +11,7 @@ SRC_URI = " \
     file://exynos-blacklist.conf \
     "
 
-DEPENDS =  "astoria-config"
+DEPENDS = "astoria-config"
 
 S = "${WORKDIR}"
 
