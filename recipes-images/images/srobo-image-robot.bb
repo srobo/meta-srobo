@@ -21,5 +21,7 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     astoria-config \
     mosquitto \
     servohack \
+    python3-matplotlib \
+    python3-pandas \
     "
 
