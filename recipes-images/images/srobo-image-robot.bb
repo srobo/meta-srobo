@@ -23,5 +23,6 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     servohack \
     python3-matplotlib \
     python3-pandas \
+    python3-pyudev \
     "
 
