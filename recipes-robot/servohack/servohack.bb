@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=2e7439106ad0c88223e853736a7b7aec"
 
 inherit systemd
 
-RDEPENDS:${PN} = "${PYTHON_PN}-astoria"
+RDEPENDS:${PN} = "python3-astoria"
 
 SRC_URI = " \
     file://LICENSE \
