@@ -8,7 +8,7 @@ inherit systemd
 
 DEPENDS = "polkit astoria-config"
 
-RDEPENDS_${PN} = "astoria-config python3-astoria python3-udiskie"
+RDEPENDS:${PN} = "astoria-config ${PYTHON_PN}-astoria ${PYTHON_PN}-udiskie"
 
 SRC_URI = " \
     file://LICENSE \

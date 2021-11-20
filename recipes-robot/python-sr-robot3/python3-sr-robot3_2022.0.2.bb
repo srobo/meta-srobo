@@ -9,6 +9,6 @@ SRC_URI[sha256sum] = "4882f30841df2e7d2d3ea9a68d1f65e10a8bffd71de27a171b2483e535
 PYPI_PACKAGE = "sr.robot3"
 inherit pypi setuptools3
 
-RDEPENDS:${PN} = "${PYTHON_PN}-pyserial python3-j5 python3-j5-zoloto python3-astoria"
+RDEPENDS:${PN} = "${PYTHON_PN}-pyserial ${PYTHON_PN}-j5 ${PYTHON_PN}-j5-zoloto ${PYTHON_PN}-astoria"
 
 BBCLASSEXTEND = "native nativesdk"
