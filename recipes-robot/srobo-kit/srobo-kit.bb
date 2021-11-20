@@ -13,6 +13,8 @@ SRC_URI = " \
 
 DEPENDS = "astoria-config"
 
+RDEPENDS:${PN} = "astoria-udiskie ${PYTHON_PN}-sr-robot3 servohack"
+
 S = "${WORKDIR}"
 
 do_install () {

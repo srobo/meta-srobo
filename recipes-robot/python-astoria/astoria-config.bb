@@ -8,7 +8,7 @@ inherit useradd
 
 USERADD_PACKAGES = "astoria-config"
 
-RDEPENDS_${PN} = "python3-astoria python3-udiskie"
+RDEPENDS:${PN} = "python3-astoria python3-udiskie mosquitto"
 
 SRC_URI = " \
     file://LICENSE \
