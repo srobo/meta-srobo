@@ -15,5 +15,6 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     systemd-analyze \
     python3-matplotlib \
     python3-pandas \
+    python3-pillow \
     python3-pyudev \
     "
