@@ -14,6 +14,7 @@ enable_wpa3 = false
 [system]
 cache_dir = "/var/srobo/cache"
 initial_log_lines = [
+    "Student Robotics OS %VERSIONSTRING%",
     "Is there something you'd like us to add to the kit or API? 💡",
     "Perhaps there's something you think we should improve? 🛠️",
     "Let us know your feedback about your experience using our kit at https://studentrobotics.org/kit-feedback 🗣️"
