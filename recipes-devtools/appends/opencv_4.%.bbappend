@@ -1,1 +1,1 @@
-PACKAGECONFIG:prepend = "python3 "
+PACKAGECONFIG:prepend = "python3 dnn "
