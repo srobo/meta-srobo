@@ -4,7 +4,7 @@ HOMEPAGE = "https://github.com/RealOrangeOne/zoloto"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=bfd7580e6f0deacd183d33dd0ee386d8"
 
-SRC_URI[sha256sum] = "72153c55c316d04494ca8ab43f9cbc1fa4b0eebb972eeb9426ccb16f35610526"
+SRC_URI[sha256sum] = "885678a60cad8e8ed57d857a9c219b36f13f0e351124dcc6db3485050cc6f16f"
 
 PYPI_PACKAGE = "zoloto"
 inherit pypi setuptools3
