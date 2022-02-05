@@ -22,7 +22,7 @@ S = "${WORKDIR}"
 USERADD_PARAM:${PN} = "-r -G video,dialout astoria"
 
 SYSTEMD_AUTO_ENABLE = "enable"
-SYSTEMD_SERVICE:${PN} = "astdiskd.service astmetad.service astprocd.service"
+SYSTEMD_SERVICE:${PN} = "astdiskd.service astmetad.service astprocd.service astwifid.service"
 
 DIRFILES = "1"
 
@@ -31,4 +31,5 @@ do_install () {
     install -m 0644 ${WORKDIR}/astdiskd.service ${D}${systemd_system_unitdir}
     install -m 0644 ${WORKDIR}/astmetad.service ${D}${systemd_system_unitdir}
     install -m 0644 ${WORKDIR}/astprocd.service ${D}${systemd_system_unitdir}
+    install -m 0644 ${WORKDIR}/astwifid.service ${D}${systemd_system_unitdir}
 }
