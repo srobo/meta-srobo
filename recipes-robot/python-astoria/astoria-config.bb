@@ -15,6 +15,7 @@ SRC_URI = " \
     file://astdiskd.service \
     file://astmetad.service \
     file://astprocd.service \
+    file://astwifid.service \
     "
 
 S = "${WORKDIR}"
