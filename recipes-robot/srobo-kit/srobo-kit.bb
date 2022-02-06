@@ -10,7 +10,6 @@ SRC_URI = " \
     file://astoria.toml \
     file://exynos-blacklist.conf \
     file://dnsmasq.conf \
-    file://nftables.conf \
     file://br0.netdev \
     file://br0.network \
     file://eth0.network \
@@ -18,7 +17,7 @@ SRC_URI = " \
 
 DEPENDS = "astoria-config"
 
-RDEPENDS:${PN} = "astoria-udiskie python3-sr-robot3 servohack dnsmasq nftables"
+RDEPENDS:${PN} = "astoria-udiskie python3-sr-robot3 servohack dnsmasq lighttpd"
 
 S = "${WORKDIR}"
 
@@ -31,8 +30,8 @@ do_install () {
     install -m 0644 ${WORKDIR}/astoria.toml ${D}/etc/
     install -d ${D}/etc/modprobe.d/
     install -m 0644 ${WORKDIR}/exynos-blacklist.conf ${D}/etc/modprobe.d/
+    install -d ${D}/etc/dnsmasq.d/
     install -m 0644 ${WORKDIR}/dnsmasq.conf ${D}/etc/dnsmasq.d/srobo.conf
-    install -m 0644 ${WORKDIR}/nftables.conf ${D}/etc/nftables.conf
     install -d ${D}/etc/systemd/network
     install -m 0644 ${WORKDIR}/br0.netdev ${D}/etc/systemd/network/br0.netdev
     install -m 0644 ${WORKDIR}/br0.network ${D}/etc/systemd/network/br0.network

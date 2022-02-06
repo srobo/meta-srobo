@@ -12,6 +12,7 @@ IMAGE_FEATURES += " \
 CORE_IMAGE_EXTRA_INSTALL += " \
     packagegroup-core-full-cmdline \
     srobo-kit \
+    srobo-firewall \
     systemd-analyze \
     python3-matplotlib \
     python3-pandas \
