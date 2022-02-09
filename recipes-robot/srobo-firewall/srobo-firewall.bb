@@ -5,7 +5,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=691d84ab639c4b8173db302930bf71f4"
 
 SYSTEMD_AUTO_ENABLE = "enable"
-SYTEMD_SERVICE:${PN} = "nftables.service"
+SYSTEMD_SERVICE:${PN} = "nftables.service"
 
 SRC_URI = " \
     file://LICENSE \
