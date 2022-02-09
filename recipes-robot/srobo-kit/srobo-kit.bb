@@ -9,15 +9,11 @@ SRC_URI = " \
     file://10-srobo.rules \
     file://astoria.toml \
     file://exynos-blacklist.conf \
-    file://dnsmasq.conf \
-    file://br0.netdev \
-    file://br0.network \
-    file://eth0.network \
     "
 
 DEPENDS = "astoria-config"
 
-RDEPENDS:${PN} = "astoria-udiskie python3-sr-robot3 servohack dnsmasq lighttpd"
+RDEPENDS:${PN} = "astoria-udiskie python3-sr-robot3 servohack"
 
 S = "${WORKDIR}"
 
@@ -30,12 +26,4 @@ do_install () {
     install -m 0644 ${WORKDIR}/astoria.toml ${D}/etc/
     install -d ${D}/etc/modprobe.d/
     install -m 0644 ${WORKDIR}/exynos-blacklist.conf ${D}/etc/modprobe.d/
-    install -d ${D}/etc/dnsmasq.d/
-    install -m 0644 ${WORKDIR}/dnsmasq.conf ${D}/etc/dnsmasq.d/srobo.conf
-    install -d ${D}/etc/systemd/network
-    install -m 0644 ${WORKDIR}/br0.netdev ${D}/etc/systemd/network/br0.netdev
-    install -m 0644 ${WORKDIR}/br0.network ${D}/etc/systemd/network/br0.network
-    install -m 0644 ${WORKDIR}/eth0.network ${D}/etc/systemd/network/eth0.network
-    install -d ${D}/etc/sysctl.d
-    echo "net.ipv4.ip_forward=1" > ${D}/etc/sysctl.d/ip_forward.conf
 }
