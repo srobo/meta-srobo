@@ -19,7 +19,7 @@ SRC_URI = " \
 
 S = "${WORKDIR}"
 
-USERADD_PARAM:${PN} = "-r -G video -G dialout astoria"
+USERADD_PARAM:${PN} = "-r -G video,dialout astoria"
 
 SYSTEMD_AUTO_ENABLE = "enable"
 SYSTEMD_SERVICE:${PN} = "astdiskd.service astmetad.service astprocd.service"
