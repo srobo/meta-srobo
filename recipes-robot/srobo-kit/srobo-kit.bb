@@ -9,6 +9,7 @@ SRC_URI = " \
     file://10-srobo.rules \
     file://astoria.toml \
     file://exynos-blacklist.conf \
+    file://mount_options.conf \
     "
 
 DEPENDS = "astoria-config"
@@ -26,4 +27,6 @@ do_install () {
     install -m 0644 ${WORKDIR}/astoria.toml ${D}/etc/
     install -d ${D}/etc/modprobe.d/
     install -m 0644 ${WORKDIR}/exynos-blacklist.conf ${D}/etc/modprobe.d/
+    install -d ${D}/etc/udisks2/
+    install -m 0644 ${WORKDIR}/mount_options.conf ${D}/etc/udisks2/
 }
