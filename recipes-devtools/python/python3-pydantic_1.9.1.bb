@@ -4,7 +4,7 @@ HOMEPAGE = "https://github.com/samuelcolvin/pydantic"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=2c02ea30650b91528657db64baea1757"
 
-SRC_URI[sha256sum] = "26464e57ccaafe72b7ad156fdaa4e9b9ef051f69e175dbbb463283000c05ab7b"
+SRC_URI[sha256sum] = "1ed987c3ff29fff7fd8c3ea3a3ea877ad310aae2ef9889a119e22d3f2db0691a"
 
 PYPI_PACKAGE = "pydantic"
 inherit pypi setuptools3
