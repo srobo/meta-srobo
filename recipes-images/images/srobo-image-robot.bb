@@ -20,3 +20,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     python3-pillow \
     python3-pyudev \
     "
+
+RPI_USE_U_BOOT = "1"
