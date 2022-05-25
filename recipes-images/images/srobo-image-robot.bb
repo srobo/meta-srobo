@@ -22,3 +22,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     "
 
 RPI_USE_U_BOOT = "1"
+VIDEO_CAMERA = "1"
+
