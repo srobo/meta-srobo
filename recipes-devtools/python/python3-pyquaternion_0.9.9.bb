@@ -5,7 +5,7 @@ HOMEPAGE = "http://kieranwynn.github.io/pyquaternion/"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=2e781a9e674524ac159509cb4c72cfc4"
 
-SRC_URI = "git://github.com/KieranWynn/pyquaternion.git;protocol=https"
+SRC_URI = "git://github.com/KieranWynn/pyquaternion.git;protocol=https;branch=master"
 
 # Modify these as desired
 PV = "0.9.9"
