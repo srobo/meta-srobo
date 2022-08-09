@@ -11,6 +11,7 @@ IMAGE_FEATURES += " \
 
 CORE_IMAGE_EXTRA_INSTALL += " \
     packagegroup-core-full-cmdline \
+    lvm2 \
     srobo-kit \
     srobo-firewall \
     srobo-network \
