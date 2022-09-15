@@ -3,7 +3,7 @@ Description=ServoHack
 After=mosquitto.service astprocd.service
 
 [Service]
-ExecStart=/usr/bin/astplodd.py
+ExecStart=/usr/bin/servohack
 User=root
 Restart=on-failure
 RestartSec=5s
