@@ -5,12 +5,12 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=2e7439106ad0c88223e853736a7b7aec"
 
 inherit systemd
 
-RDEPENDS:${PN} = "python3-astoria"
+RDEPENDS:${PN} = "python3-astoria python3-pydantic uhubctl"
 
 SRC_URI = " \
     file://LICENSE \
     file://servohack.service \
-    file://astplodd.py \
+    file://servohack.py \
     "
 
 S = "${WORKDIR}"
@@ -24,5 +24,5 @@ do_install () {
     install -d ${D}${systemd_system_unitdir}
     install -d ${D}/usr/bin/
     install -m 0644 ${WORKDIR}/servohack.service ${D}${systemd_system_unitdir}
-    install -m 0755 ${WORKDIR}/astplodd.py ${D}/usr/bin/
+    install -m 0755 ${WORKDIR}/servohack.py ${D}/usr/bin/servohack
 }
