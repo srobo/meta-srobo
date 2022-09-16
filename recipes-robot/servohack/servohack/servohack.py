@@ -52,10 +52,13 @@ class ServoHackConsumer(StateConsumer):
                         LOGGER.info("Code has been started")
                     elif message.code_status is not CodeStatus.RUNNING and self._code_started:
                         LOGGER.info("USB removed, toggling USB lines")
+                        # Use USB power per-port power switching to toggle USB Power
+                        # More information on the USB Hub Architecture of the Raspberry Pi 4
+                        # can be found at https://github.com/mvp/uhubctl#raspberry-pi-4b
                         await asyncio.create_subprocess_exec(
                             "/usr/sbin/uhubctl",
-                            "--loc", "1-1",
-                            "--action", "cycle",
+                            "--loc", "1-1",  # USB2 hub 1-1, 4 ports ganged, dual to USB3 hub 2
+                            "--action", "cycle",  # Toggle the port off and on
                             "--delay", "0.2",
                         )
                         self.code_started = False
